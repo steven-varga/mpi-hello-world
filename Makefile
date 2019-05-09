@@ -6,5 +6,8 @@ all: ${EXECS}
 mpi_hello_world: mpi_hello_world.c
 	${MPICC} -o mpi_hello_world mpi_hello_world.c
 
+install:
+	cp mpi_hello_world ~/.local/bin
+
 clean:
 	rm ${EXECS}
